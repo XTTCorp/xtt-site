@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XTT | SASE Secure Connect</title>
+    <meta name="description" content="Secure Access Service Edge (SASE) by XTT. Converge network routing and cloud-based security to protect distributed branch offices and remote workforces.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .subpage-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin-top: 1.5rem;
+        }
+        .section-block {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+        .section-block h2 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-color);
+            font-size: 1.8rem;
+            border-left: 3px solid var(--brand-gold);
+            padding-left: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+        .section-block h3 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-color);
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+        }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .benefit-card {
+            padding: 1.75rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .benefit-card h4 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--brand-gold);
+            font-size: 1.15rem;
+            margin: 0;
+        }
+        .diff-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.01);
+            border-radius: 8px;
+            border: 1px dashed var(--card-border);
+        }
+        .diff-column h5 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+        .diff-column.without h5 {
+            color: #ef4444;
+        }
+        .diff-column.with h5 {
+            color: var(--brand-teal);
+        }
+        .diff-column ul {
+            margin-left: 1.25rem;
+        }
+        .diff-column li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .faq-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .faq-item {
+            padding: 1.25rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+        }
+        .faq-item summary {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            color: var(--text-color);
+            cursor: pointer;
+            outline: none;
+        }
+        .faq-item p {
+            margin-top: 0.75rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img id="logo-img" src="images/SimpleLogoSmall.png" alt="XTT Logo" class="logo">
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <div class="nav-item nav-item-dropdown">
+                    <button class="dropdown-trigger">Solutions & Services</button>
+                    <div class="dropdown-menu">
+                        <a href="sase.html" class="dropdown-item">Secure SASE Cloud</a>
+                        <a href="sdwan.html" class="dropdown-item">Managed SD-WAN</a>
+                        <a href="project_management.html" class="dropdown-item">Project Management</a>
+                        <a href="pen_testing.html" class="dropdown-item">Penetration Testing</a>
+                        <a href="ztna.html" class="dropdown-item">Zero Trust Access (ZTNA)</a>
+                    </div>
+                </div>
+                <div class="nav-item nav-item-dropdown">
+                    <button class="dropdown-trigger">About XTT</button>
+                    <div class="dropdown-menu">
+                        <a href="about_us.html" class="dropdown-item">About Us</a>
+                        <a href="network.html" class="dropdown-item">Global Infrastructure</a>
+                        <a href="careers.html" class="dropdown-item">Careers</a>
+                        <a href="case_studies.html" class="dropdown-item">Case Studies</a>
+                        <a href="leadership.html" class="dropdown-item">Leadership</a>
+                    </div>
+                </div>
+                <a href="news/index.html" class="nav-item">News</a>
+                <a href="index.html#calculator" class="nav-item">ROI Planner</a>
+                <a href="index.html#contact" class="nav-item contact-btn">Get Started</a>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" style="margin-top: 8rem; margin-bottom: 5rem; min-height: 60vh;">
+        <div class="glass" style="padding: 3rem; display: flex; flex-direction: column; gap: 2.5rem;">
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <span class="hero-badge" style="width: fit-content;">Secure Networking</span>
+                <h1 style="font-family: 'Outfit', sans-serif; font-size: 2.75rem; color: var(--text-color); margin-top: 0.5rem;">SASE Secure Connect</h1>
+                <p style="font-size: 1.25rem; color: var(--brand-gold); font-weight: 500; margin-top: 0.25rem;">Converged cloud routing and security to protect your distributed enterprise.</p>
+            </div>
+
+            <div class="hero-image-container" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--card-border);">
+                <img src="images/sase_hero.jpg" alt="SASE Cloud Security Platform" style="width: 100%; height: auto; display: block;">
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid var(--card-border);">
+
+            <div class="subpage-grid">
+                <!-- Section 1: Challenge -->
+                <div class="section-block">
+                    <h2>Key Trends Driving Security Transformation</h2>
+                    <p>The enterprise network perimeter is dissolving. As business workloads migrate to SaaS environments and employees connect from home offices, branch locations, and mobile endpoints, routing all traffic back to a central headquarters firewall is no longer viable. Backhauling traffic creates severe latency bottlenecking, degrades application performance, and leads to expensive bandwidth consumption, while leaving direct-to-cloud connections vulnerable to exploit.</p>
+                </div>
+
+                <!-- Section 2: Solution -->
+                <div class="section-block">
+                    <h2>What is Secure Access Service Edge (SASE)?</h2>
+                    <p>SASE (pronounced "sassy") bridges the gap between software-defined routing and advanced cloud security. By running security policies directly on our anycast transit core PoPs, users connect securely to their applications without risking data exposure. SASE consolidates Firewall as a Service (FWaaS), Secure Web Gateway (SWG), Zero Trust Network Access (ZTNA), and Cloud Access Security Broker (CASB) into a unified cloud-delivered stack.</p>
+                </div>
+
+                <!-- Section 3: Benefits -->
+                <div class="section-block">
+                    <h2>The Benefits of XTT SASE</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <h4>Increased Security Posture</h4>
+                            <p>Apply consistent, granular security policies globally across all locations, WFH connections, and SaaS workloads simultaneously.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Compliance Assurance</h4>
+                            <p>Natively log and audit transit activity. Simplify HIPAA, SOC2, and PCI-DSS audits with unified traffic visibility and policy enforcement.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Endpoint Protection</h4>
+                            <p>Verify user identity and device health posture (EDR status, OS patches) before allowing access to private resources.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Enhanced Performance</h4>
+                            <p>Direct-to-cloud pathing eliminates backhauling latency, improving the user experience for VoIP and core business tools.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4: GTT Difference -->
+                <div class="section-block">
+                    <h2>The XTT Difference</h2>
+                    <p>We deploy SASE solutions powered by industry leaders (primarily standardizing on <strong>Fortinet Secure Connect</strong>) to deliver flexible integration options.</p>
+                    
+                    <div class="diff-row">
+                        <div class="diff-column without">
+                            <h5>Without XTT</h5>
+                            <ul>
+                                <li>Complex, multi-vendor security configurations that drift over time.</li>
+                                <li>Reliance on legacy client VPNs that trust devices globally on local subnets.</li>
+                                <li>Slow web-filtering updates that miss emerging threat vectors.</li>
+                                <li>Backhauling congestion that degrades user productivity.</li>
+                            </ul>
+                        </div>
+                        <div class="diff-column with">
+                            <h5>With XTT</h5>
+                            <ul>
+                                <li>Unified security policy management managed by certified architects.</li>
+                                <li>Identity-aware ZTNA tunnels that restrict users strictly to authorized applications.</li>
+                                <li>Real-time DNS shielding and SSL/TLS packet inspection.</li>
+                                <li>Direct-to-cloud anycast routing across our optimized transit backbone.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5: FAQ -->
+                <div class="section-block">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-accordion">
+                        <details class="faq-item" open>
+                            <summary>What is the difference between SASE and traditional VPNs?</summary>
+                            <p>Traditional VPNs grant users complete access to an entire local network subnet once they authenticate. SASE leverages ZTNA (Zero Trust Network Access), which verifies identity and device posture on every connection request and limits access strictly to authorized applications—hiding the rest of the network to prevent lateral attacks.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>How does SASE handle web filtering and SSL inspection?</summary>
+                            <p>Our cloud PoP nodes decrypt and inspect SSL/TLS traffic in real time, checking for malware, scripting exploits, and data exfiltration markers. It applies strict URL and category filtering policies before re-encrypting and forwarding the traffic to its destination.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Do we need to replace our existing routers to use SASE?</summary>
+                            <p>Not necessarily. While we recommend deploying Fortinet or MikroTik CPE units at your branch sites for optimal integration, our SASE cloud can receive secure IPSec/WireGuard tunnels from almost any modern firewall or client endpoint.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img id="logo-img-footer" src="images/SimpleLogoSmall.png" alt="XTT Logo" class="logo">
+                    <span>XTT Ltd. Co</span>
+                </div>
+                <p class="footer-copy">© 2026 XTT Ltd. Co. Based in Atlanta, GA. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Legal Policies</h4>
+                <a href="terms_of_service.html" target="_blank">Terms of Service</a>
+                <a href="acceptable_use_policy.html" target="_blank">Acceptable Use Policy</a>
+                <a href="privacy_policy.html" target="_blank">Privacy Policy</a>
+                <a href="../legal/contract_template_msa.md" target="_blank">Contract Template (MSA)</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

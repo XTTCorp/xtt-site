@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XTT | Secure Managed Connectivity & AI Consulting</title>
+    <meta name="description" content="Based in Atlanta, Georgia. XTT provides enterprise-grade SD-WAN, SASE, Rural Connectivity Kits, and AI Consulting on a cloud-routed transit network.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo-link">
+                <!-- SVG fallbacks or dynamic logo paths based on theme -->
+                <img id="logo-img" src="images/SimpleLogoSmall.png" alt="XTT Logo" class="logo">
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <div class="nav-item nav-item-dropdown">
+                    <button class="dropdown-trigger">Solutions & Services</button>
+                    <div class="dropdown-menu">
+                        <a href="sase.html" class="dropdown-item">Secure SASE Cloud</a>
+                        <a href="sdwan.html" class="dropdown-item">Managed SD-WAN</a>
+                        <a href="project_management.html" class="dropdown-item">Project Management</a>
+                        <a href="pen_testing.html" class="dropdown-item">Penetration Testing</a>
+                        <a href="ztna.html" class="dropdown-item">Zero Trust Access (ZTNA)</a>
+                    </div>
+                </div>
+                <div class="nav-item nav-item-dropdown">
+                    <button class="dropdown-trigger">About XTT</button>
+                    <div class="dropdown-menu">
+                        <a href="about_us.html" class="dropdown-item">About Us</a>
+                        <a href="network.html" class="dropdown-item">Global Infrastructure</a>
+                        <a href="careers.html" class="dropdown-item">Careers</a>
+                        <a href="case_studies.html" class="dropdown-item">Case Studies</a>
+                        <a href="leadership.html" class="dropdown-item">Leadership</a>
+                    </div>
+                </div>
+                <a href="news/index.html" class="nav-item">News</a>
+                <a href="index.html#calculator" class="nav-item">ROI Planner</a>
+                <a href="index.html#contact" class="nav-item contact-btn">Get Started</a>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">Enterprise Cloud Networking & SASE</span>
+                <h1 class="hero-title">Global Reach. Secure Transit. <span class="gradient-text">Intelligent Design.</span></h1>
+                <p class="hero-desc">Secure SD-WAN, unified SASE, and Edge AI Consulting built on an ultra-scalable cloud-routed transit network. Connecting enterprises to applications globally.</p>
+                <div class="hero-actions">
+                    <a href="#calculator" class="btn btn-primary">Try the ROI Planner</a>
+                    <a href="#services" class="btn btn-secondary">Explore Solutions</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card glass">
+                    <div class="card-node">
+                        <span class="status-indicator online"></span>
+                        <strong>Atlanta Core Exchange</strong>
+                        <span class="muted">Anycast Transit Backbone</span>
+                    </div>
+                    <hr>
+                    <div class="card-stats">
+                        <div class="stat-item"><span class="number">3+</span><span class="label">Transit Hubs</span></div>
+                        <div class="stat-item"><span class="number">Tier-1</span><span class="label">Backbone</span></div>
+                        <div class="stat-item"><span class="number">98%</span><span class="label">Core SLA</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Solutions</h2>
+                <p class="section-subtitle">Flexible managed networking and enterprise intelligence services engineered to deliver reliability.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card glass">
+                    <div class="service-icon">🔒</div>
+                    <h3>Managed SD-WAN</h3>
+                    <p>Carrier-neutral software-defined WAN providing sub-second link failover, application-aware routing, and automated path optimization across any combination of local connections.</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Unified SASE & Security</h3>
+                    <p>Cloud-delivered NGFW, Web Filtering, IPS, and Zero Trust Network Access (ZTNA) built directly into our transit nodes to protect your branches, users, and workloads.</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon">🌐</div>
+                    <h3>Diverse Local Access</h3>
+                    <p>We partner with major global carriers, regional fiber networks, cellular 5G/LTE providers, and satellite operators to deliver redundant first-mile access anywhere.</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon">🚀</div>
+                    <h3>Secure Remote Access</h3>
+                    <p>Residential SD-WAN tunnels that bypass CGNAT to inject a clean, static public IPv4 address, prioritizing corporate VoIP and critical business traffic for WFH executives.</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon">🧠</div>
+                    <h3>Edge AI Consulting</h3>
+                    <p>Architecting secure local data pipelines, edge inference nodes, and local model caches to deploy private LLMs without risking proprietary data exposure.</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon">💼</div>
+                    <h3>ISP Management (IMaaS)</h3>
+                    <p>A single point of contact for all network operations. Outsource carrier billing consolidation, active SLA tracking, and 24/7 ISP ticket escalation to XTT.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Network Map Section -->
+    <section class="network" id="network">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Global Cloud Networking Infrastructure</h2>
+                <p class="section-subtitle">A software-defined high-availability transit network connecting you to the core. Real-time path optimization across multiple Points of Presence.</p>
+            </div>
+            <div class="network-map-interactive glass">
+                <div class="map-controls">
+                    <button class="map-tab active" data-map="cgnat">Remote Office SD-WAN</button>
+                    <button class="map-tab" data-map="rural">Resilient First-Mile (Bonded Access)</button>
+                    <button class="map-tab" data-map="sdwan">Enterprise SASE Cloud</button>
+                </div>
+                <div class="map-visual-container">
+                    <!-- Dynamic Topology SVG or DOM elements here -->
+                    <div class="topology-display" id="topology-display">
+                        <!-- Content injected via JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vendors Section (Infinite Scrolling Ticker) -->
+    <section class="vendors-section">
+        <div class="container">
+            <h3 class="vendors-title">Vendors We Proudly Use</h3>
+            <div class="logo-ticker-container">
+                <div class="logo-ticker-track">
+                    <!-- Set 1 -->
+                    <div class="vendor-logo-container">
+                        <img src="images/logo_fortinet_black.png" alt="Fortinet" class="vendor-logo black-logo">
+                        <img src="images/logo_fortinet_white.png" alt="Fortinet" class="vendor-logo white-logo">
+                    </div>
+                    <div class="vendor-logo-container">
+                        <img src="images/logo_mikrotik_black.png" alt="MikroTik" class="vendor-logo black-logo">
+                        <img src="images/logo_mikrotik_white.png" alt="MikroTik" class="vendor-logo white-logo">
+                    </div>
+                    <div class="vendor-logo-container">
+                        <img src="images/logo_hpe_black.png" alt="HPE" class="vendor-logo black-logo">
+                        <img src="images/logo_hpe_white.png" alt="HPE" class="vendor-logo white-logo">
+                    </div>
+                    <div class="vendor-logo-container">
+                        <img src="images/logo_tenable_black.png" alt="Tenable" class="vendor-logo black-logo">
+                        <img src="images/logo_tenable_white.png" alt="Tenable" class="vendor-logo white-logo">
+                    </div>
+                    <div class="vendor-logo-container">
+                        <img src="images/logo_inhand_networks_black.png" alt="InHand Networks" class="vendor-logo black-logo">
+                        <img src="images/logo_inhand_networks_white.png" alt="InHand Networks" class="vendor-logo white-logo">
+                    </div>
+                    <!-- Set 2 (Duplicated for infinite scroll loop) -->
+                    <div class="vendor-logo-container">
+                        <img src="images/logo_fortinet_black.png" alt="Fortinet" class="vendor-logo black-logo">
+                        <img src="images/logo_fortinet_white.png" alt="Fortinet" class="vendor-logo white-logo">
+                    </div>
+                    <div class="vendor-logo-container">
+                        <img src="images/logo_mikrotik_black.png" alt="MikroTik" class="vendor-logo black-logo">
+                        <img src="images/logo_mikrotik_white.png" alt="MikroTik" class="vendor-logo white-logo">
+                    </div>
+                    <div class="vendor-logo-container">
+                        <img src="images/logo_hpe_black.png" alt="HPE" class="vendor-logo black-logo">
+                        <img src="images/logo_hpe_white.png" alt="HPE" class="vendor-logo white-logo">
+                    </div>
+                    <div class="vendor-logo-container">
+                        <img src="images/logo_tenable_black.png" alt="Tenable" class="vendor-logo black-logo">
+                        <img src="images/logo_tenable_white.png" alt="Tenable" class="vendor-logo white-logo">
+                    </div>
+                    <div class="vendor-logo-container">
+                        <img src="images/logo_inhand_networks_black.png" alt="InHand Networks" class="vendor-logo black-logo">
+                        <img src="images/logo_inhand_networks_white.png" alt="InHand Networks" class="vendor-logo white-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Calculator Section -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Enterprise Solution & ROI Planner</h2>
+                <p class="section-subtitle">Model your customized cloud network footprint, evaluate setup fees, and project estimated downtime cost recovery.</p>
+            </div>
+            <div class="calc-grid">
+                <!-- User input side -->
+                <div class="calc-card glass inputs-card">
+                    <h3>Configure Service Plan</h3>
+                    
+                    <div class="form-group">
+                        <label for="plan-select">Select Network Solution</label>
+                        <select id="plan-select" class="custom-select">
+                            <option value="res-sdwan" data-price="29.99" data-setup="70.00" selected>Residential SD-WAN ($29.99/mo)</option>
+                            <option value="rural" data-price="85.00" data-setup="250.00">Rural Connectivity Kit ($85.00/mo)</option>
+                            <option value="smb-sdwan" data-price="149.00" data-setup="200.00">SMB Managed SD-WAN ($149.00/mo)</option>
+                            <option value="ent-sdwan" data-price="349.00" data-setup="500.00">Enterprise SD-WAN ($349.00/mo)</option>
+                            <option value="imaas" data-price="99.00" data-setup="150.00">ISP Management as a Service ($99.00/mo)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-count-range">Enterprise Connected Sites: <span id="user-count-val">50</span></label>
+                        <input type="range" id="user-count-range" min="1" max="254" value="50" class="range-slider">
+                        <div class="range-markers">
+                            <span>1 Site</span>
+                            <span>128 Sites</span>
+                            <span>254 Sites</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="add-consulting">
+                        <label for="add-consulting">Include Edge AI Integration Support (+ $200/hr)</label>
+                    </div>
+
+                    <div id="consulting-hours-container" class="form-group hidden">
+                        <label for="consulting-hours">Consulting Hours Needed</label>
+                        <input type="number" id="consulting-hours" min="1" value="10" class="number-input">
+                    </div>
+                </div>
+
+                <!-- Outputs side -->
+                <div class="calc-card glass summary-card">
+                    <div class="summary-bg-accent"></div>
+                    <div class="summary-header">
+                        <h3>Service Cost & Savings Summary</h3>
+                    </div>
+                    <div class="summary-list">
+                        <div class="summary-row">
+                            <span>Plan Monthly Subscription (Per Site)</span>
+                            <span class="value" id="client-monthly-out">$29.99</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Setup / Hardware Fee (One-Time)</span>
+                            <span class="value" id="client-setup-out">$70.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>AI Consulting (Project-Based)</span>
+                            <span class="value" id="client-consulting-out">$0.00</span>
+                        </div>
+                        <hr>
+                        <div class="summary-row">
+                            <span>Total Service Subscription</span>
+                            <span class="value highlight-revenue" id="client-total-monthly-out">$1,499.50</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Average Monthly ISP Downtime</span>
+                            <span class="value highlight-cost">4.2 hours / mo</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>XTT Dual-WAN Target Downtime</span>
+                            <span class="value highlight-profit">&lt; 0.1 hours / mo</span>
+                        </div>
+                        <hr>
+                        <div class="summary-row total-profit">
+                            <span>Net Return (Downtime Savings)</span>
+                            <span class="value highlight-profit" id="client-savings-out">$15,375.00</span>
+                        </div>
+                        <div class="summary-row margin-row">
+                            <span>*Savings based on recovery of average $75/hr productivity per user/site.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="calc-card glass contact-card">
+                <div class="section-header">
+                    <h2 class="section-title">Schedule a Consultation</h2>
+                    <p class="section-subtitle">Let's build a resilient network setup for your home office or enterprise branch.</p>
+                </div>
+                <form class="contact-form" id="lead-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name</label>
+                            <input type="text" id="contact-name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-company">Company</label>
+                            <input type="text" id="contact-company" placeholder="Example LLC" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone">Phone Number</label>
+                            <input type="tel" id="contact-phone" placeholder="404-555-0199" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-msg">Requirements Details</label>
+                        <textarea id="contact-msg" rows="4" placeholder="Describe your network requirements (e.g. CGNAT bypass, Starlink failover, number of sites)..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+                    <div id="form-success-msg" class="form-success hidden">✓ Thank you! Our Atlanta team will reach out to you shortly.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img id="logo-img-footer" src="images/SimpleLogoSmall.png" alt="XTT Logo" class="logo">
+                    <span>XTT Ltd. Co</span>
+                </div>
+                <p class="footer-copy">© 2026 XTT Ltd. Co. Based in Atlanta, GA. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Legal Policies</h4>
+                <a href="terms_of_service.html" target="_blank">Terms of Service</a>
+                <a href="acceptable_use_policy.html" target="_blank">Acceptable Use Policy</a>
+                <a href="privacy_policy.html" target="_blank">Privacy Policy</a>
+                <a href="../legal/contract_template_msa.md" target="_blank">Contract Template (MSA)</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

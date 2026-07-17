@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XTT | Managed SD-WAN Services</title>
+    <meta name="description" content="Secure, carrier-neutral Managed SD-WAN services by XTT. Optimize application performance, achieve sub-second failover, and reduce TCO across all locations.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .subpage-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin-top: 1.5rem;
+        }
+        .section-block {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+        .section-block h2 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-color);
+            font-size: 1.8rem;
+            border-left: 3px solid var(--brand-gold);
+            padding-left: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+        .section-block h3 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-color);
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+        }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .benefit-card {
+            padding: 1.75rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .benefit-card h4 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--brand-gold);
+            font-size: 1.15rem;
+            margin: 0;
+        }
+        .diff-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.01);
+            border-radius: 8px;
+            border: 1px dashed var(--card-border);
+        }
+        .diff-column h5 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+        .diff-column.without h5 {
+            color: #ef4444;
+        }
+        .diff-column.with h5 {
+            color: var(--brand-teal);
+        }
+        .diff-column ul {
+            margin-left: 1.25rem;
+        }
+        .diff-column li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        .faq-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .faq-item {
+            padding: 1.25rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+        }
+        .faq-item summary {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            color: var(--text-color);
+            cursor: pointer;
+            outline: none;
+        }
+        .faq-item p {
+            margin-top: 0.75rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img id="logo-img" src="images/SimpleLogoSmall.png" alt="XTT Logo" class="logo">
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <div class="nav-item nav-item-dropdown">
+                    <button class="dropdown-trigger">Solutions & Services</button>
+                    <div class="dropdown-menu">
+                        <a href="sase.html" class="dropdown-item">Secure SASE Cloud</a>
+                        <a href="sdwan.html" class="dropdown-item">Managed SD-WAN</a>
+                        <a href="project_management.html" class="dropdown-item">Project Management</a>
+                        <a href="pen_testing.html" class="dropdown-item">Penetration Testing</a>
+                        <a href="ztna.html" class="dropdown-item">Zero Trust Access (ZTNA)</a>
+                    </div>
+                </div>
+                <div class="nav-item nav-item-dropdown">
+                    <button class="dropdown-trigger">About XTT</button>
+                    <div class="dropdown-menu">
+                        <a href="about_us.html" class="dropdown-item">About Us</a>
+                        <a href="network.html" class="dropdown-item">Global Infrastructure</a>
+                        <a href="careers.html" class="dropdown-item">Careers</a>
+                        <a href="case_studies.html" class="dropdown-item">Case Studies</a>
+                        <a href="leadership.html" class="dropdown-item">Leadership</a>
+                    </div>
+                </div>
+                <a href="news/index.html" class="nav-item">News</a>
+                <a href="index.html#calculator" class="nav-item">ROI Planner</a>
+                <a href="index.html#contact" class="nav-item contact-btn">Get Started</a>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" style="margin-top: 8rem; margin-bottom: 5rem; min-height: 60vh;">
+        <div class="glass" style="padding: 3rem; display: flex; flex-direction: column; gap: 2.5rem;">
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <span class="hero-badge" style="width: fit-content;">Secure Networking</span>
+                <h1 style="font-family: 'Outfit', sans-serif; font-size: 2.75rem; color: var(--text-color); margin-top: 0.5rem;">Managed SD-WAN Services</h1>
+                <p style="font-size: 1.25rem; color: var(--brand-gold); font-weight: 500; margin-top: 0.25rem;">Secure, agile connectivity that transforms your enterprise network performance.</p>
+            </div>
+
+            <div class="hero-image-container" style="width: 100%; overflow: hidden; border-radius: 12px; border: 1px solid var(--card-border);">
+                <img src="images/sdwan_hero.jpg" alt="SD-WAN Routing System" style="width: 100%; height: auto; display: block;">
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid var(--card-border);">
+
+            <div class="subpage-grid">
+                <!-- Section 1: Challenge -->
+                <div class="section-block">
+                    <h2>When Your Network Holds You Back</h2>
+                    <p>In a cloud-first era, legacy wide area network (WAN) configurations restrict business operations. Rigid MPLS architectures are expensive, slow to provision, and struggle with the traffic demands of SaaS and cloud-hosted platforms. Meanwhile, relying on single public broadband lines leaves branches exposed to carrier outages, high packet loss, and jitter that interrupts real-time applications like VoIP and video conferencing.</p>
+                </div>
+
+                <!-- Section 2: Solution -->
+                <div class="section-block">
+                    <h2>What is Managed SD-WAN?</h2>
+                    <p>Software-Defined Wide Area Networking (SD-WAN) abstracts network control from physical hardware, creating an intelligent routing overlay. This allows you to combine diverse first-mile circuits—like local fiber, dynamic cable, cellular LTE/5G, and Starlink satellite connections—into a single, high-availability transport pipeline.</p>
+                    <p>SD-WAN dynamically monitors traffic conditions across all circuits in real time, automatically steering critical application sessions onto the best available path to prevent disconnects and downtime.</p>
+                </div>
+
+                <!-- Section 3: Benefits -->
+                <div class="section-block">
+                    <h2>Key Benefits & Capabilities</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <h4>Increased Productivity</h4>
+                            <p>Bond multiple lines active-active. If a primary circuit fails, sessions failover sub-second with zero dropped VoIP calls or database disconnects.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Enhanced Performance</h4>
+                            <p>Application-aware routing prioritizes critical business tools (Office365, Zoom, ERP database) over non-essential traffic to optimize bandwidth.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Technology Choice</h4>
+                            <p>Vendor-neutral design. Standardize on high-performance Fortinet FortiGate edge components or budget-friendly MikroTik setups.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <h4>Reduced TCO</h4>
+                            <p>Drastically cut recurring first-mile transport costs by replacing expensive private circuits with managed public broadband links.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4: GTT Difference -->
+                <div class="section-block">
+                    <h2>The XTT Difference</h2>
+                    <p>We combine network engineering flexibility with true proactive management to deliver a resilient service experience.</p>
+                    
+                    <div class="diff-row">
+                        <div class="diff-column without">
+                            <h5>Without XTT</h5>
+                            <ul>
+                                <li>Carrier lock-in to single telco backbones.</li>
+                                <li>Inflexible hardware choices and expensive licensing.</li>
+                                <li>Your internal IT staff coordinates troubleshooting, ISP escalations, and configuration updates.</li>
+                                <li>Standard failover leaves backup connections idle.</li>
+                            </ul>
+                        </div>
+                        <div class="diff-column with">
+                            <h5>With XTT</h5>
+                            <ul>
+                                <li>Vast carrier-neutral coverage leveraging multiple regional fiber and wireless partners.</li>
+                                <li>Flexible hardware profiles (Fortinet or MikroTik) that fit your budget.</li>
+                                <li>24/7 proactive NOC monitoring. We negotiate with ISPs, consolidate billing, and handle tickets.</li>
+                                <li>Active-Active link bonding with sub-second path steering.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5: FAQ -->
+                <div class="section-block">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-accordion">
+                        <details class="faq-item" open>
+                            <summary>How does SD-WAN compare to legacy MPLS?</summary>
+                            <p>MPLS provides high reliability but at a very high cost per megabit and slow provisioning cycles. SD-WAN delivers equivalent reliability by bonding multiple low-cost broadband lines active-active. By using multiple paths, SD-WAN often delivers less monthly downtime than a single MPLS link at a fraction of the total cost.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>Can XTT bond Starlink with terrestrial lines?</summary>
+                            <p>Yes. Our SD-WAN edge configurations can bond satellite links (like Starlink) with local cellular LTE/5G or wireline connections. The software dynamically handles the latency differences to ensure stable VPN transit.</p>
+                        </details>
+                        <details class="faq-item">
+                            <summary>What hardware is used at the edge?</summary>
+                            <p>We deploy Fortinet FortiGate (40F/60F/80F) appliances for enterprise security mandates and MikroTik devices for cost-conscious SMB branches.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img id="logo-img-footer" src="images/SimpleLogoSmall.png" alt="XTT Logo" class="logo">
+                    <span>XTT Ltd. Co</span>
+                </div>
+                <p class="footer-copy">© 2026 XTT Ltd. Co. Based in Atlanta, GA. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Legal Policies</h4>
+                <a href="terms_of_service.html" target="_blank">Terms of Service</a>
+                <a href="acceptable_use_policy.html" target="_blank">Acceptable Use Policy</a>
+                <a href="privacy_policy.html" target="_blank">Privacy Policy</a>
+                <a href="../legal/contract_template_msa.md" target="_blank">Contract Template (MSA)</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

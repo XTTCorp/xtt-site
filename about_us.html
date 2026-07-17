@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XTT | About Us</title>
+    <meta name="description" content="Learn about XTT Ltd. Co., our corporate mission, values of data sovereignty, carrier neutrality, and history of secure cloud networking.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .subpage-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin-top: 1.5rem;
+        }
+        .section-block {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+        .section-block h2 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-color);
+            font-size: 1.8rem;
+            border-left: 3px solid var(--brand-gold);
+            padding-left: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .value-card {
+            padding: 1.75rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .value-card h3 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--brand-gold);
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        .value-card p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img id="logo-img" src="images/SimpleLogoSmall.png" alt="XTT Logo" class="logo">
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <div class="nav-item nav-item-dropdown">
+                    <button class="dropdown-trigger">Solutions & Services</button>
+                    <div class="dropdown-menu">
+                        <a href="sase.html" class="dropdown-item">Secure SASE Cloud</a>
+                        <a href="sdwan.html" class="dropdown-item">Managed SD-WAN</a>
+                        <a href="project_management.html" class="dropdown-item">Project Management</a>
+                        <a href="pen_testing.html" class="dropdown-item">Penetration Testing</a>
+                        <a href="ztna.html" class="dropdown-item">Zero Trust Access (ZTNA)</a>
+                    </div>
+                </div>
+                <div class="nav-item nav-item-dropdown">
+                    <button class="dropdown-trigger">About XTT</button>
+                    <div class="dropdown-menu">
+                        <a href="about_us.html" class="dropdown-item">About Us</a>
+                        <a href="network.html" class="dropdown-item">Global Infrastructure</a>
+                        <a href="careers.html" class="dropdown-item">Careers</a>
+                        <a href="case_studies.html" class="dropdown-item">Case Studies</a>
+                        <a href="leadership.html" class="dropdown-item">Leadership</a>
+                    </div>
+                </div>
+                <a href="news/index.html" class="nav-item">News</a>
+                <a href="index.html#calculator" class="nav-item">ROI Planner</a>
+                <a href="index.html#contact" class="nav-item contact-btn">Get Started</a>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" style="margin-top: 8rem; margin-bottom: 5rem; min-height: 60vh;">
+        <div class="glass" style="padding: 3rem; display: flex; flex-direction: column; gap: 2.5rem;">
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <span class="hero-badge" style="width: fit-content;">Our Identity</span>
+                <h1 style="font-family: 'Outfit', sans-serif; font-size: 2.75rem; color: var(--text-color); margin-top: 0.5rem;">About XTT Ltd. Co.</h1>
+                <p style="font-size: 1.25rem; color: var(--brand-gold); font-weight: 500; margin-top: 0.25rem;">Designing secure network pathways that connect enterprises to global workloads.</p>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid var(--card-border);">
+
+            <div class="subpage-grid">
+                <!-- Section 1: History -->
+                <div class="section-block">
+                    <h2>Our Mission & Background</h2>
+                    <p>Established in Atlanta, Georgia, <strong>XTT Ltd. Co.</strong> was founded to resolve the challenges of rigid legacy network design, cloud migrations, and remote office connectivity. We build and operate high-availability, software-defined network overlays that bypass local carrier restrictions and dynamically secure traffic boundaries directly at the edge.</p>
+                    <p>Unlike traditional telecoms that rely on single backbones and vendor lock-in, XTT is carrier-neutral. We consolidate local ISPs, manage BGP routing across regional core PoPs (Atlanta, Dallas, Seattle), and optimize path stability to ensure your enterprise workloads perform seamlessly.</p>
+                </div>
+
+                <!-- Section 2: Values -->
+                <div class="section-block">
+                    <h2>Core Corporate Pillars</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <h3>Carrier Independence</h3>
+                            <p>We are dedicated to vendor neutrality. We bond whatever first-mile paths are best at your locations (fiber, 5G, satellite Starlink) to build absolute uptime redundancy.</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Data Sovereignty</h3>
+                            <p>We respect client privacy. XTT operates under a strict <strong>no-logs network transit standard</strong> for all data payloads—we secure your routes, we never inspect your files.</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Uptime Transparency</h3>
+                            <p>We believe in verifiable performance. Our network SLA targets (98% Core availability) are backed by clear, contractually guaranteed service credits.</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Integration Competence</h3>
+                            <p>We connect and optimize. Our professional Edge AI consulting designs low-latency transport overlays configured safely for private local GPU clusters.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img id="logo-img-footer" src="images/SimpleLogoSmall.png" alt="XTT Logo" class="logo">
+                    <span>XTT Ltd. Co</span>
+                </div>
+                <p class="footer-copy">© 2026 XTT Ltd. Co. Based in Atlanta, GA. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Legal Policies</h4>
+                <a href="terms_of_service.html" target="_blank">Terms of Service</a>
+                <a href="acceptable_use_policy.html" target="_blank">Acceptable Use Policy</a>
+                <a href="privacy_policy.html" target="_blank">Privacy Policy</a>
+                <a href="../legal/contract_template_msa.md" target="_blank">Contract Template (MSA)</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XTT | Careers & Opportunities</title>
+    <meta name="description" content="Join XTT's network engineering and cybersecurity teams. Explore open roles, culture, competitive perks, and certification budgets.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .subpage-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            margin-top: 1.5rem;
+        }
+        .section-block {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+        .section-block h2 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-color);
+            font-size: 1.8rem;
+            border-left: 3px solid var(--brand-gold);
+            padding-left: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .value-card {
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+        }
+        .value-card h3 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--brand-gold);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+        .perks-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+            list-style: none;
+            padding: 0;
+        }
+        .perks-list li {
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.01);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+        .perks-list strong {
+            color: var(--text-color);
+        }
+        .role-card {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+        .role-card h3 {
+            color: var(--text-color);
+            margin-bottom: 0.25rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+        }
+        .role-meta {
+            font-size: 0.85rem;
+            color: var(--brand-gold);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .role-card ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .role-card li {
+            margin-bottom: 0.4rem;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img id="logo-img" src="images/SimpleLogoSmall.png" alt="XTT Logo" class="logo">
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <div class="nav-item nav-item-dropdown">
+                    <button class="dropdown-trigger">Solutions & Services</button>
+                    <div class="dropdown-menu">
+                        <a href="sase.html" class="dropdown-item">Secure SASE Cloud</a>
+                        <a href="sdwan.html" class="dropdown-item">Managed SD-WAN</a>
+                        <a href="project_management.html" class="dropdown-item">Project Management</a>
+                        <a href="pen_testing.html" class="dropdown-item">Penetration Testing</a>
+                        <a href="ztna.html" class="dropdown-item">Zero Trust Access (ZTNA)</a>
+                    </div>
+                </div>
+                <div class="nav-item nav-item-dropdown">
+                    <button class="dropdown-trigger">About XTT</button>
+                    <div class="dropdown-menu">
+                        <a href="about_us.html" class="dropdown-item">About Us</a>
+                        <a href="network.html" class="dropdown-item">Global Infrastructure</a>
+                        <a href="careers.html" class="dropdown-item">Careers</a>
+                        <a href="case_studies.html" class="dropdown-item">Case Studies</a>
+                        <a href="leadership.html" class="dropdown-item">Leadership</a>
+                    </div>
+                </div>
+                <a href="news/index.html" class="nav-item">News</a>
+                <a href="index.html#calculator" class="nav-item">ROI Planner</a>
+                <a href="index.html#contact" class="nav-item contact-btn">Get Started</a>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" style="margin-top: 8rem; margin-bottom: 5rem; min-height: 60vh;">
+        <div class="glass" style="padding: 3rem; display: flex; flex-direction: column; gap: 2.5rem;">
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <span class="hero-badge" style="width: fit-content;">Careers</span>
+                <h1 style="font-family: 'Outfit', sans-serif; font-size: 2.75rem; color: var(--text-color); margin-top: 0.5rem;">Future-Enable Your Career</h1>
+                <p style="font-size: 1.25rem; color: var(--brand-gold); font-weight: 500; margin-top: 0.25rem;">Join a fast-growing, carrier-neutral transit and edge security pioneer.</p>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid var(--card-border);">
+
+            <div class="subpage-grid">
+                <!-- Section 1: Philosophy -->
+                <div class="section-block">
+                    <h2>Why Work at XTT?</h2>
+                    <p>While legacy telecom conglomerates rely on outdated hardware lock-ins and manual customer service models, XTT is built on automation, engineering integrity, and carrier-neutral flexibility. We empower our teams to design elegant, high-availability SD-WAN overlays, deploy unified SASE policies on our core BGP anycast exchanges, and consult on the next generation of local edge AI architectures. If you thrive on solving complex routing issues and building clean network paths, you will fit right in.</p>
+                </div>
+
+                <!-- Section 2: Values -->
+                <div class="section-block">
+                    <h2>Our Cultural Pillars</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <h3>Continuous Learning</h3>
+                            <p>Technology evolves rapidly. We support our team's growth with dedicated annual certification budgets, technical training, and paid conference access.</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Absolute Ownership</h3>
+                            <p>We work in small, focused units. Every engineer is trusted to design, validate, and support their network segments with autonomy.</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Privacy Obsession</h3>
+                            <p>We treat client data payloads as sacred. We maintain a strict no-logs transit standard, building secure transit pipelines rather than data monitors.</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Collaborative Spirit</h3>
+                            <p>Even as a remote-first team, we sync daily, run collaborative code audits, and stand up solutions together in peer programming sessions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Benefits -->
+                <div class="section-block">
+                    <h2>Compensation & Perks</h2>
+                    <ul class="perks-list">
+                        <li><strong>Comprehensive Healthcare</strong>: 100% employer-covered health, dental, and vision insurance for employees.</li>
+                        <li><strong>Retirement Match</strong>: Generous 401(k) retirement matching with immediate vesting options.</li>
+                        <li><strong>Certification Budget</strong>: $3,000 annual allowance for networking, security, and systems engineering training.</li>
+                        <li><strong>Workplace Flexibility</strong>: Remote-first workflow with a modern staging hub in Atlanta, GA.</li>
+                        <li><strong>Workstation Allowance</strong>: $2,500 initial stipend to set up your home office hardware.</li>
+                        <li><strong>Equity Packages</strong>: Share in the company's growth with early-stage equity grants.</li>
+                    </ul>
+                </div>
+
+                <!-- Section 4: Roles -->
+                <div class="section-block">
+                    <h2>Open Roles</h2>
+                    
+                    <div class="role-card">
+                        <h3>Network Reliability Engineer (NRE)</h3>
+                        <div class="role-meta">Atlanta, GA / Remote — Full-Time</div>
+                        <p>Scale our regional anycast BGP PoP backbone (Atlanta, Dallas, Seattle). Design virtual transit overlays, configure MikroTik CHR routing engines, and audit SASE gateways.</p>
+                        <ul>
+                            <li><strong>Prerequisites</strong>: MTCINE, CCNP, or equivalent. 3+ years experience with virtual RouterOS, BGP peerings, IPSec/WireGuard, and Linux networks.</li>
+                        </ul>
+                    </div>
+
+                    <div class="role-card">
+                        <h3>Edge AI Systems Engineer</h3>
+                        <div class="role-meta">Remote / Hybrid — Full-Time</div>
+                        <p>Architect secure local data pipelines, private GPU fabric clusters, and localized LLM caches at enterprise branch facilities.</p>
+                        <ul>
+                            <li><strong>Prerequisites</strong>: Deep familiarity with Python, PyTorch, Docker, low-latency network tuning, and private model deployment patterns.</li>
+                        </ul>
+                    </div>
+
+                    <div class="role-card">
+                        <h3>Enterprise Account Director</h3>
+                        <div class="role-meta">Atlanta, GA — Full-Time</div>
+                        <p>Drive regional outreach to Atlanta-area enterprise channels and managed service partners, introducing XTT's carrier-neutral transit models.</p>
+                        <ul>
+                            <li><strong>Prerequisites</strong>: 5+ years experience in SD-WAN, SASE, or enterprise telecom software sales. Proven track record of close execution.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p style="text-align: center; margin-top: 1rem; color: var(--text-muted);">Interested in joining us? Send your credentials and CV to: <strong>careers@xtt.co</strong></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img id="logo-img-footer" src="images/SimpleLogoSmall.png" alt="XTT Logo" class="logo">
+                    <span>XTT Ltd. Co</span>
+                </div>
+                <p class="footer-copy">© 2026 XTT Ltd. Co. Based in Atlanta, GA. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Legal Policies</h4>
+                <a href="terms_of_service.html" target="_blank">Terms of Service</a>
+                <a href="acceptable_use_policy.html" target="_blank">Acceptable Use Policy</a>
+                <a href="privacy_policy.html" target="_blank">Privacy Policy</a>
+                <a href="../legal/contract_template_msa.md" target="_blank">Contract Template (MSA)</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XTT | Case Studies</title>
+    <meta name="description" content="Read real-world enterprise deployments of XTT's SD-WAN, SASE, and CGNAT bypass networks. Real ROI numbers and network architectures.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .study-card {
+            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .study-card h3 {
+            color: var(--brand-gold);
+            margin-bottom: 1rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+        }
+        .study-metrics {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid var(--card-border);
+        }
+        .metric-item {
+            display: flex;
+            flex-direction: column;
+        }
+        .metric-val {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--brand-teal);
+            font-family: 'Outfit', sans-serif;
+        }
+        .metric-lbl {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.25rem;
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img id="logo-img" src="images/SimpleLogoSmall.png" alt="XTT Logo" class="logo">
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">Home</a>
+                <div class="nav-item nav-item-dropdown">
+                    <button class="dropdown-trigger">Solutions & Services</button>
+                    <div class="dropdown-menu">
+                        <a href="sase.html" class="dropdown-item">Secure SASE Cloud</a>
+                        <a href="sdwan.html" class="dropdown-item">Managed SD-WAN</a>
+                        <a href="project_management.html" class="dropdown-item">Project Management</a>
+                        <a href="pen_testing.html" class="dropdown-item">Penetration Testing</a>
+                        <a href="ztna.html" class="dropdown-item">Zero Trust Access (ZTNA)</a>
+                    </div>
+                </div>
+                <div class="nav-item nav-item-dropdown">
+                    <button class="dropdown-trigger">About XTT</button>
+                    <div class="dropdown-menu">
+                        <a href="about_us.html" class="dropdown-item">About Us</a>
+                        <a href="network.html" class="dropdown-item">Global Infrastructure</a>
+                        <a href="careers.html" class="dropdown-item">Careers</a>
+                        <a href="case_studies.html" class="dropdown-item">Case Studies</a>
+                        <a href="leadership.html" class="dropdown-item">Leadership</a>
+                    </div>
+                </div>
+                <a href="news/index.html" class="nav-item">News</a>
+                <a href="index.html#calculator" class="nav-item">ROI Planner</a>
+                <a href="index.html#contact" class="nav-item contact-btn">Get Started</a>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" style="margin-top: 8rem; margin-bottom: 5rem; min-height: 60vh;">
+        <div class="glass" style="padding: 3rem; display: flex; flex-direction: column; gap: 2rem;">
+            <span class="hero-badge" style="width: fit-content;">Proven ROI</span>
+            <h1 style="font-family: 'Outfit', sans-serif; font-size: 2.5rem; color: var(--text-color); border-bottom: 1px solid var(--card-border); padding-bottom: 1rem;">Case Studies</h1>
+            
+            <div class="subpage-content" style="color: var(--text-muted); line-height: 1.8; font-size: 1.05rem; display: flex; flex-direction: column; gap: 1.5rem;">
+                <p>Read how XTT designs, rolls out, and operates secure software-defined networks that recover productivity loss, eliminate single points of ISP failure, and support enterprise edge compliance.</p>
+
+                <!-- Case Study 1 -->
+                <div class="study-card">
+                    <h3>1. Multi-Site Logistics Firm: Managed SD-WAN</h3>
+                    <p><strong>The Challenge</strong>: A regional distribution logistics company with 52 warehouse locations was experiencing frequent network outages due to local broadband failures, resulting in scanner gun disconnects and shipping delays costing $12k per hour.</p>
+                    <p><strong>The Solution</strong>: XTT deployed a carrier-neutral Managed SD-WAN solution at each warehouse. We bonded local primary fiber links with dynamic cellular LTE/5G backups routing directly through our private Atlanta core node.</p>
+                    <div class="study-metrics">
+                        <div class="metric-item"><span class="metric-val">99.99%</span><span class="metric-lbl">Uptime Achieved</span></div>
+                        <div class="metric-item"><span class="metric-val">&lt; 1 Second</span><span class="metric-lbl">Failover Time</span></div>
+                        <div class="metric-item"><span class="metric-val">84%</span><span class="metric-lbl">Downtime Cost Reduction</span></div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="study-card">
+                    <h3>2. WFH Engineering Team: CGNAT Bypass & Security</h3>
+                    <p><strong>The Challenge</strong>: A software firm had 120 developers working remotely. Their local residential ISPs placed endpoints behind Carrier-Grade NAT (CGNAT), making secure port-forwarding and direct SSH configurations to localized staging servers impossible.</p>
+                    <p><strong>The Solution</strong>: Deployed XTT Residential SD-WAN client tunnels. Tunnels bypassed local CGNAT bounds, routing connections directly to our core transit node to inject a clean, static, dedicated IPv4 address for each developer with strict firewall profiling.</p>
+                    <div class="study-metrics">
+                        <div class="metric-item"><span class="metric-val">120 Tunnels</span><span class="metric-lbl">Active Endpoints</span></div>
+                        <div class="metric-item"><span class="metric-val">100%</span><span class="metric-lbl">CGNAT Bypass Success</span></div>
+                        <div class="metric-item"><span class="metric-val">Clean static IP</span><span class="metric-lbl">Delivered per user</span></div>
+                    </div>
+                </div>
+
+                <!-- Case Study 3 -->
+                <div class="study-card">
+                    <h3>3. Rural Construction Site: Bonded Transit</h3>
+                    <p><strong>The Challenge</strong>: A mining and heavy construction company stood up a large field base camp in a rural region with zero wireline broadband access, needing low-latency VoIP and heavy document sync links.</p>
+                    <p><strong>The Solution</strong>: Installed an XTT Rural Connectivity Kit containing a high-gain MikroTik Chateau gateway bonding a Starlink Dishy with a secondary long-range LTE directional receiver, tunnelled directly to our nearest regional transit node.</p>
+                    <div class="study-metrics">
+                        <div class="metric-item"><span class="metric-val">180 Mbps</span><span class="metric-lbl">Sustained Downlink</span></div>
+                        <div class="metric-item"><span class="metric-val">Dual Path</span><span class="metric-lbl">Active Bonding</span></div>
+                        <div class="metric-item"><span class="metric-val">45 ms</span><span class="metric-lbl">Average Latency</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img id="logo-img-footer" src="images/SimpleLogoSmall.png" alt="XTT Logo" class="logo">
+                    <span>XTT Ltd. Co</span>
+                </div>
+                <p class="footer-copy">© 2026 XTT Ltd. Co. Based in Atlanta, GA. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Legal Policies</h4>
+                <a href="terms_of_service.html" target="_blank">Terms of Service</a>
+                <a href="acceptable_use_policy.html" target="_blank">Acceptable Use Policy</a>
+                <a href="privacy_policy.html" target="_blank">Privacy Policy</a>
+                <a href="../legal/contract_template_msa.md" target="_blank">Contract Template (MSA)</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
