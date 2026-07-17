@@ -39,6 +39,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Mobile & Touch Dropdown Toggles ---
+    const dropdowns = document.querySelectorAll('.nav-item-dropdown');
+    dropdowns.forEach(dropdown => {
+        const trigger = dropdown.querySelector('.dropdown-trigger');
+        if (trigger) {
+            trigger.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const isActive = dropdown.classList.contains('active');
+                
+                // Close all other dropdowns
+                dropdowns.forEach(d => d.classList.remove('active'));
+                
+                if (!isActive) {
+                    dropdown.classList.add('active');
+                }
+            });
+        }
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', () => {
+        dropdowns.forEach(d => d.classList.remove('active'));
+    });
+
     // --- Interactive Cost Calculator ---
     const planSelect = document.getElementById('plan-select');
     const userRange = document.getElementById('user-count-range');

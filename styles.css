@@ -247,19 +247,32 @@
     border: 1px solid var(--card-border);
     border-radius: 8px;
     padding: 0.75rem 0;
-    display: none;
+    display: flex;
     flex-direction: column;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
     z-index: 200;
     opacity: 0;
-    transform: translateY(-5px);
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    visibility: hidden;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.25s;
 }
 
-.nav-item-dropdown:hover .dropdown-menu {
-    display: flex;
+.nav-item-dropdown:hover .dropdown-menu,
+.nav-item-dropdown.active .dropdown-menu {
     opacity: 1;
+    visibility: visible;
     transform: translateY(0);
+    pointer-events: auto;
+}
+
+.nav-item-dropdown.active .dropdown-trigger {
+    color: var(--brand-gold);
+}
+
+.nav-item-dropdown.active .dropdown-trigger::after {
+    transform: rotate(180deg);
+    color: var(--brand-gold);
 }
 
 .dropdown-item {
