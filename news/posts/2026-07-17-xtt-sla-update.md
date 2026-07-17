@@ -1,7 +1,7 @@
 ---
 title: "XTT Transitions to a Balanced 98% Service Level Agreement (SLA)"
 date: "2026-07-17"
-author: "Alex Mercer, CTO"
+author: "XTT Marketing"
 summary: "XTT aligns performance targets with realistic delivery metrics to offer enterprise and SMB clients transparent uptime credits."
 ---
 
