@@ -1226,3 +1226,12 @@ hr {
     font-size: 0.9rem;
 }
 
+/* Subpage Hero Header spacing to account for fixed navbar */
+.subpage-hero {
+    padding-top: 9.5rem;
+    padding-bottom: 3.5rem;
+    background: rgba(var(--brand-slate-rgb), 0.01);
+    border-bottom: 1px solid var(--card-border);
+    text-align: center;
+}
+
