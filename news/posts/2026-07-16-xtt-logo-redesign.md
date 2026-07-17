@@ -1,7 +1,7 @@
 ---
 title: "Introducing XTT's Dynamic Identity Redesign"
 date: "2026-07-16"
-author: "Elena Rostova, Director of Branding"
+author: "XTT Marketing"
 summary: "XTT rolls out its new high-contrast visual identity optimized for digital screens and modern theme switching."
 ---
 
