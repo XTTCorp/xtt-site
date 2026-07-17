@@ -11,11 +11,11 @@ except ImportError:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "markdown"])
     import markdown
 
-posts_dir = "/home/alteredgenome/XTTBuilding/website/news/posts"
-templates_dir = "/home/alteredgenome/XTTBuilding/website/news/templates"
-output_dir = "/home/alteredgenome/XTTBuilding/website/news/posts"
-index_file = "/home/alteredgenome/XTTBuilding/website/news/index.html"
-template_file = "/home/alteredgenome/XTTBuilding/website/news/templates/post_template.html"
+posts_dir = "news/posts"
+templates_dir = "news/templates"
+output_dir = "news/posts"
+index_file = "news/index.html"
+template_file = "news/templates/post_template.html"
 
 os.makedirs(posts_dir, exist_ok=True)
 os.makedirs(templates_dir, exist_ok=True)
